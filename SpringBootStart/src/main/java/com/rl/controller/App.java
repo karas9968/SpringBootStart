@@ -1,4 +1,4 @@
-package SpringTest.SpringTest;
+package com.rl.controller;
 
 /**
  * Hello world!

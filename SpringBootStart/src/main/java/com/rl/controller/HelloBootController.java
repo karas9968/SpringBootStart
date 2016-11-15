@@ -1,4 +1,4 @@
-package SpringTest.SpringTest;
+package com.rl.controller;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
