@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+	<Properties>
+		<Property name="PID">????</Property>
+		<Property name="LOG_PATTERN">[%t][%d{HH:mm:ss:SSS}][%-5p] (%c{1}:%L) : %m%n</Property>
+		<property name="LOG_HOME">/Users/karas/Desktop/log/</property>
+		<property name="FILE_NAME">SpringBootStart</property>
+	</Properties>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT" follow="true">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+		</Console>
+		<File name="File" fileName="${LOG_HOME}${FILE_NAME}.log" append="true">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+		</File>
+		<!-- <RollingRandomAccessFile name="MIS_PROJECT"
+			fileName="${LOG_HOME}${FILE_NAME}.log"
+			filePattern="${LOG_HOME}${FILE_NAME}-%d{yyyy-MM-dd}-%i.log.gz">
+
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="10 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="20" />
+		</RollingRandomAccessFile> -->
+	</Appenders>
+	<Loggers>
+		<!-- <Logger name="org.hibernate.validator.internal.util.Version" level="warn" />
+		<Logger name="org.apache.coyote.http11.Http11NioProtocol" level="warn" />
+		<Logger name="org.apache.tomcat.util.net.NioSelectorPool" level="warn" /> -->
+		<Logger name="org.apache.catalina.startup.DigesterFactory" level="info" />
+		<Root level="info">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="File" />
+		</Root>
+	</Loggers>
+</Configuration>
