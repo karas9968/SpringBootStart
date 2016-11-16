@@ -1,0 +1,1 @@
+java -Xmx3g -cp ../lib/*; com.ns.main.Application 
