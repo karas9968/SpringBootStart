@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+#indexPage {
+	width:1024px;
+	height:768px;
+	background:#fff url('../images/logo.jpg') no-repeat;
+	background-size:100%;
+}
+
+#insideDiv{
+	padding-top:450px;
+}
+#insideDiv div{
+	display: inline-block;
+	width:510px;
+	height:150px;
+	text-align : center;
+	line-height : 200px;
+}
+
+img{
+	width:350px;
+	height:150px;
+	vertical-align : middle;
+	cursor: pointer;
+	
+}

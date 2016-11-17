@@ -1,1 +1,1 @@
-java -Xmx8g -cp ../lib/*: com.ns.main.Application 
+java -Xmx8g -cp ../lib/*: com.ns.Application 

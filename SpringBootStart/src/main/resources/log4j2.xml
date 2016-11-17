@@ -3,7 +3,7 @@
 	<Properties>
 		<Property name="PID">????</Property>
 		<Property name="LOG_PATTERN">[%t][%d{HH:mm:ss:SSS}][%-5p] (%c{1}:%L) : %m%n</Property>
-		<property name="LOG_HOME">/Users/karas/Desktop/log/</property>
+		<property name="LOG_HOME">../logs/</property>
 		<property name="FILE_NAME">SpringBootStart</property>
 	</Properties>
 	<Appenders>
